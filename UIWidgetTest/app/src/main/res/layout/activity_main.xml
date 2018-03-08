@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="this is textview"
+            android:textColor="#ccc"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Click Me"
+            android:textAllCaps="false" />
+
+        <EditText
+            android:id="@+id/txt_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type something here..."
+            android:maxLines="2"/>
+
+        <Button
+            android:id="@+id/btn_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Show Message"
+            android:textAllCaps="false" />
+
+        <ImageView
+            android:layout_width="@android:dimen/thumbnail_width"
+            android:layout_height="@android:dimen/thumbnail_height"
+            android:src="@drawable/img01" />
+
+        <Button
+            android:id="@+id/btn_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Load Image"
+            android:textAllCaps="false" />
+        <ImageView
+            android:id="@+id/img02"
+            android:layout_width="@android:dimen/thumbnail_width"
+            android:layout_height="@android:dimen/thumbnail_height"
+            android:src="@drawable/img01"/>
+        <Button
+            android:id="@+id/btn_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start ProgressBar"
+            android:textAllCaps="false" />
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"/>
+        <Button
+            android:id="@+id/btn_alert_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Show Alert Dialog"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_progress_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Show Progress Dialog"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>
+
+
+

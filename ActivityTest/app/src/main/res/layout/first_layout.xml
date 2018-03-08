@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button 1" />
+
+    <Button
+        android:id="@+id/btn_destroy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit" />
+
+    <Button
+        android:id="@+id/btn_visit_baidu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="visit www.baidu.com" />
+
+    <Button
+        android:id="@+id/btn_make_a_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALL 911" />
+
+    <Button
+        android:id="@+id/btn_send_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send data to second activity" />
+
+    <Button
+        android:id="@+id/btn_start_activity_for_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start activity for result" />
+
+    <Button
+        android:id="@+id/btn_start_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start new firstactivity" />
+</LinearLayout>

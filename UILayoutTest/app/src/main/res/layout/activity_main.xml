@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@+id/btn_linear" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="linear layout"/>
+    <Button android:id="@+id/btn_relative" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="relative layout"/>
+    <Button android:id="@+id/btn_frame" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="frame layout"/>
+    <Button android:id="@+id/btn_percent_frame" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="percent frame layout"/>
+</GridLayout>
