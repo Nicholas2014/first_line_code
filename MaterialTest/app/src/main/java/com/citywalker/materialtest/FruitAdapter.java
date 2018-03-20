@@ -1,6 +1,7 @@
 package com.citywalker.materialtest;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -29,8 +30,8 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
         public ViewHolder(View view) {
             super(view);
             this.cardView = (CardView) view;
-            this.imageView = (ImageView)view.findViewById(R.id.fruit_image);
-            this.textView = (TextView)view.findViewById(R.id.fruit_name);
+            this.imageView = (ImageView) view.findViewById(R.id.fruit_image);
+            this.textView = (TextView) view.findViewById(R.id.fruit_name);
         }
     }
 
@@ -44,7 +45,20 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
             context = parent.getContext();
         }
         View view = LayoutInflater.from(context).inflate(R.layout.fruit_item, parent, false);
-        return new ViewHolder(view);
+        final ViewHolder holder = new ViewHolder(view);
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                int pos = holder.getAdapterPosition();
+                Fruit fruit = fruitList.get(pos);
+                Intent intent = new Intent(context, FruitActivity.class);
+                intent.putExtra(FruitActivity.FRUIT_NAME, fruit.getName());
+                intent.putExtra(FruitActivity.FRUIT_IMAGE_ID, fruit.getImageId());
+                context.startActivity(intent);
+            }
+        });
+        return holder;
     }
 
     @Override
